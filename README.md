@@ -36,7 +36,7 @@ Use this installation method unless you have very specific requirements
 
 4. Open the command prompt and download our code:
 
-        git clone https://gitlab.com/ozeuth/Python-Houdini-Plugin-for-Tensorflow-Smoke-Stylization.git
+        git clone https://github.com/kymwatts/Python-Houdini-Plugin-for-Tensorflow-Smoke-Stylization.git
 
 5. Ensure you have Houdini installed. If not, [download it](https://www.sidefx.com/download/).
 * You do not need the commercial version.
