@@ -48,22 +48,28 @@ Whilst Houdini (as of 8/26/2019), runs off Python 2.7, you still need a second c
 This problem may be trivialised for Linux users, who benefit from both a flexible Python environment for Houdini and Tensorflow support for Python 2.7.
 
 1. Ensure you have a Houdini-independent Python 2.7 installed and on your Environment Path. If not, [download it](https://www.python.org/download/releases/2.7/)
+2.  install pip:
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        c:\python27\python.exe get-pip.py
 
-2. Download the necessary libraries. You must get [Numpy, Scipy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy), [Pillow](https://files.pythonhosted.org/packages/0e/81/158a63ff32ea444d4f858a9475da98a956ef5cd3011f677c6c5c8064efe5/Pillow-6.1.0-cp27-cp27m-win_amd64.whl) and [Tensorflow](https://github.com/fo40225/tensorflow-windows-wheel/blob/master/1.10.0/py27/GPU/cuda92cudnn72avx2/tensorflow_gpu-1.10.0-cp27-cp27m-win_amd64.whl) from these exact wheels, and install the rest via command prompt:
+3. download tensorflow from [here](https://github.com/fo40225/tensorflow-windows-wheel/blob/master/1.10.0/py27/GPU/cuda92cudnn72avx2/tensorflow_gpu-1.10.0-cp27-cp27m-win_amd64.whl)
 
-        pip install --user --upgrade tqdm matplotlib imageio==2.1.1 scikit-image
+4. install the the required python packages via command prompt:
+   
+        pip install tensorflow_gpu-1.10.0-cp27-cp27m-win_amd64.whl
+        pip install --user --upgrade tqdm matplotlib imageio==2.1.1 scikit-image pillow==6.1.0
+        pip install --user numpy==1.16.4
+        pip install --user scipy==1.2.2
 
-* For numpy and scipy, install "numpy-1.16.4+mkl-cp27-cp27m-win_amd64.whl" and "scipy-1.2.2-cp27-cp27m-win_amd64.whl" respectively. Numpy must be installed first.
-* You will receive incompatability warnings. Ignore them, they are not relevant in this particular context.
-3. Download [CUDA](https://developer.nvidia.com/cuda-92-download-archive) and [CuDNN](https://developer.nvidia.com/rdp/form/cudnn-download-survey) and add them on your Environment Path.
+5. Download [CUDA](https://developer.nvidia.com/cuda-92-download-archive) and [CuDNN](https://developer.nvidia.com/rdp/form/cudnn-download-survey) and add them on your Environment Path.
 * You may need to create a NVIDIA Developer Account to download CuDNN.
 * Please Download cuDNN v7.6.3 (August 23, 2019), for CUDA 9.2.
 
-4. Open the command prompt and download our code:
+6. Open the command prompt and download our code:
 
         git clone https://gitlab.com/ozeuth/Python-Houdini-Plugin-for-Tensorflow-Smoke-Stylization.git
 
-5. Ensure you have Houdini installed. If not, [download it](https://www.sidefx.com/download/).
+7. Ensure you have Houdini installed. If not, [download it](https://www.sidefx.com/download/).
 * You do not need the commercial version.
 
 </p></details>
