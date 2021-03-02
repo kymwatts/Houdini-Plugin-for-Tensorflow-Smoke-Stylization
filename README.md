@@ -51,7 +51,7 @@ This problem may be trivialised for Linux users, who benefit from both a flexibl
 
 2. Download the necessary libraries. You must get [Numpy, Scipy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy), [Pillow](https://files.pythonhosted.org/packages/0e/81/158a63ff32ea444d4f858a9475da98a956ef5cd3011f677c6c5c8064efe5/Pillow-6.1.0-cp27-cp27m-win_amd64.whl) and [Tensorflow](https://github.com/fo40225/tensorflow-windows-wheel/blob/master/1.10.0/py27/GPU/cuda92cudnn72avx2/tensorflow_gpu-1.10.0-cp27-cp27m-win_amd64.whl) from these exact wheels, and install the rest via command prompt:
 
-        pip install --user --upgrade tqdm matplotlib imageio scikit-image
+        pip install --user --upgrade tqdm matplotlib imageio==2.1.1 scikit-image
 
 * For numpy and scipy, install "numpy-1.16.4+mkl-cp27-cp27m-win_amd64.whl" and "scipy-1.2.2-cp27-cp27m-win_amd64.whl" respectively. Numpy must be installed first.
 * You will receive incompatability warnings. Ignore them, they are not relevant in this particular context.
