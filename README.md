@@ -64,6 +64,8 @@ This problem may be trivialised for Linux users, who benefit from both a flexibl
 5. Download [CUDA](https://developer.nvidia.com/cuda-92-download-archive) and [CuDNN](https://developer.nvidia.com/rdp/form/cudnn-download-survey) and add them on your Environment Path.
 * You may need to create a NVIDIA Developer Account to download CuDNN.
 * Please Download cuDNN v7.6.3 (August 23, 2019), for CUDA 9.2.
+* once cuDNN is downloaded copy files to your cuda in astall location: `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\<version>\`
+* so that the lib files go in lib, bin in bin etc.
 
 6. Open the command prompt and download our code:
 
